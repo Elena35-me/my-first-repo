@@ -1,6 +1,6 @@
 def calculate_average():
     prices = []
-    print("Enter price: (end for stop)")
+    print("Enter price: (type 'end' to stop)")
 
     while True:
         user_input = input("Price: ")
@@ -10,7 +10,7 @@ def calculate_average():
             price = float(user_input)
             prices.append(price)
         except ValueError:
-            print("Enter number or END for stop")
+            print("Enter number or 'END' to stop")
 
     if prices:
         average_price = sum(prices) / len(prices)
